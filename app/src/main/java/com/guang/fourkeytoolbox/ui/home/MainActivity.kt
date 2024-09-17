@@ -41,8 +41,7 @@ class MainActivity : BaseActivity() {
         }
     }
 
-    fun initList() {
-        for (i in 1..100)
-            list.add(FunctionItem(i, "Function $i", "Sample"))
+    private fun initList() {
+        list.add(FunctionItem(0, "计算段位单曲acc", ComponentActivity::class.java))
     }
 }
